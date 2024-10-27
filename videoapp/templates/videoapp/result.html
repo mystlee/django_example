@@ -1,0 +1,16 @@
+<!-- videoapp/templates/videoapp/result.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>처리 결과</title>
+</head>
+<body>
+    <h1>흑백 영상</h1>
+    <video width="640" height="480" controls>
+        <source src="{{ video.processed_video.url }}" type="video/mp4">
+        브라우저가 비디오 태그를 지원하지 않습니다.
+    </video>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+<!-- videoapp/templates/videoapp/upload.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>비디오 업로드</title>
+</head>
+<body>
+    <h1>비디오 업로드</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">업로드</button>
+    </form>
+</body>
+</html>
+
